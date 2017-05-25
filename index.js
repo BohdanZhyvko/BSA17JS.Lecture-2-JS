@@ -23,3 +23,6 @@ class ImprovedFighter extends Fighter {
     super.hit(enemy, doublePoint)
   }
 }
+
+var fighter = new Fighter();
+var improvedFighter = new ImprovedFighter();
