@@ -1,12 +1,12 @@
 class Fighter {
   constructor(name, power, health){
     this.name = name;
-    this.pwer = pwer;
+    this.power  = power;
     this.health = health; 
   }
   
   setDamage(damage){
-    this.health = health - damage;
+    this.health = this.health - damage;
     console.log(`health: ${health}`);
   }
   
