@@ -51,4 +51,4 @@ var fight = (fighter, improvedFighter, ...point) => {
 };
 
 //start
-fight(fighter, improvedFighter, point);
+fight(fighter, improvedFighter, 25, 13, 45);
