@@ -18,7 +18,7 @@ class Fighter {
 }
 
 class ImprovedFighter extends Fighter {
-  doubleHit(enemy, point){
+  doubleHit(enemy, point = 1){
     let doublePoint = point*2;
     super.hit(enemy, doublePoint);
   }
