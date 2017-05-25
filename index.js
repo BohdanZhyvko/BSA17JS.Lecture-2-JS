@@ -12,7 +12,7 @@ class Fighter {
   }
   
   hit(enemy, point){
-    damage = point * this.power;
+    let damage = point * this.power;
     enemy.setDamage(damage);
   }
 }
@@ -20,6 +20,6 @@ class Fighter {
 class ImprovedFighter extends Fighter {
   doubleHit(){
     let doublePoint = point*2;
-    hit(doublePoint)
+    super.hit(enemy, doublePoint)
   }
 }
