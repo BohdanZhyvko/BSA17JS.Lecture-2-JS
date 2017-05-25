@@ -7,11 +7,19 @@ class Fighter {
   
   setDamage(damage){
     this.health = this.health - damage;
-    console.log(`health: ${health}`);
+    //string interpolation
+    console.log(`health: ${this.health}`);
   }
   
   hit(enemy, point){
     damage = point * this.power;
     enemy.setDamage(damage);
+  }
+}
+
+class ImprovedFighter extends Fighter {
+  doubleHit(){
+    let doublePoint = point*2;
+    hit(doublePoint)
   }
 }
